@@ -41,12 +41,13 @@ $ source name_env/bin/activate
 $ pip install -r requirements.txt
 ```
 3. Run tests:
-```
-pytest -v -s test_main_page.py
-pytest -v -s test_product_page.py
-```
-2. Run marked @pytest.mark.need_review tests:
 
-(name_env)name@user:~/test-online-book-store-project$ `pytest -v --tb=line --language=en -m need_review test_product_page.py`
+(name_env)name@user: ~/test-online-book-store-project$ pytest -v -s test_main_page.py
+
+(name_env)name@user: ~/test-online-book-store-project$ pytest -v -s test_product_page.py
+
+4. Run marked @pytest.mark.need_review tests:
+
+(name_env)name@user: ~/test-online-book-store-project$ pytest -v --tb=line --language=en -m need_review test_product_page.py
 
 
