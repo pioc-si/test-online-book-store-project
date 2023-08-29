@@ -42,9 +42,9 @@ $ pip install -r requirements.txt
 ```
 3. Run tests:
 
-(name_env)name@user: ~/test-online-book-store-project$ pytest -v -s test_main_page.py
+(name_env)name@user: ~/test-online-book-store-project$ `pytest -v -s test_main_page.py`
 
-(name_env)name@user: ~/test-online-book-store-project$ pytest -v -s test_product_page.py
+(name_env)name@user: ~/test-online-book-store-project$ `pytest -v -s test_product_page.py`
 
 4. Run marked @pytest.mark.need_review tests:
 
