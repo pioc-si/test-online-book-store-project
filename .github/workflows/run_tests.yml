@@ -1,16 +1,12 @@
 name: Automated tests
 
 on:
-  workflow_dispatch:
-    inputs:
-      deployment_target:
-        description: Choose target
-        required: true
-        default: user_test
-        type: choice
-        options:
-          - main_page_test
-          - product_page_test
+  push
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 
 jobs:
   test:
