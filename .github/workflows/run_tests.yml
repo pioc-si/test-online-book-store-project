@@ -6,11 +6,16 @@ on:
       deployment_target:
         description: Choose target
         required: true
-        default: user_test
+        default: product_page_test
         type: choice
         options:
           - main_page_test
           - product_page_test
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 
 jobs:
   test:
@@ -75,7 +80,3 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v1.2.9
       
-
-
-
-
